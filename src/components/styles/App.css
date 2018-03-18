@@ -1,0 +1,194 @@
+body {
+    background-color: red;
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: var(--main-bg);
+    overflow: hidden;
+}
+
+.draggable-window {
+    height: 4vh;
+    -webkit-app-region: drag;
+
+    text-align: center;
+    color: white;
+    
+    outline-color: var(--draggable-border);
+    outline-width: 1px;
+    outline-style: solid;
+    background-color: var(--draggable-bg);
+}
+
+.main-titlebar {
+    height: 6vh;
+    width: inherit;
+    -webkit-app-region: drag;
+
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-style: none none solid none;
+    border-width: medium;
+    border-color: var(--titlebar-border);
+    background-color:  var(--titlebar-bg);
+}
+
+.window-functions {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.titlebar-icons {
+    -webkit-app-region: no-drag;
+    margin: 8px;
+
+    border-radius: 15px;
+    padding: 1px;
+    border-style: solid;
+    border-width: thin;
+
+    color: var(--icon-fg);
+    border-color: var(--icon-border);
+
+    transition: all 0.25s;
+}
+
+.titlebar-icons:hover {
+    transform: scale(1.25, 1.25);
+    
+    color: var(--icon-hover-fg);
+    background-color: var(--icon-hover-bg);
+    border-color: var(--icon-hover-border);
+}
+
+/* 
+* MAIN DISPLAY
+*/
+
+@keyframes loading-database-pulse {
+    0% {
+        opacity: 1;
+        transform: scale(0.75, 0.75);
+    }
+
+    50% {
+        opacity: 0.1;
+        transform: scale(1.2, 1.2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(0.75, 0.75);
+    }
+}
+
+.loading-database {
+    width: 90vw;
+    height: 75vh;    
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 auto;
+
+    font-weight: bold;
+
+    background-color: var(--opening-database-bg);
+}
+
+.loading-database-text {
+    color: var(--opening-database-fg);
+    animation-name: loading-database-pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+.loading-data {
+    width: 90vw;
+    height: 75vh;    
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 auto;
+
+    font-weight: bold;
+
+    background-color: var(--main-bg);
+}
+
+.loading-data-text {
+    color: var(--progressbar-loading-text);
+}
+
+.progress {
+    height: 5%;
+    width: inherit;
+    background-color: var(--progressbar-bg);
+}
+
+.progress-bar {
+    color: var(--progressbar-fg);
+    background-color: var(--progressbar-complete);
+}
+
+.input-field {
+    outline: none;
+    border-style: none none solid none;
+    border-width: 2px;
+
+    text-align: center;
+
+    color: var(--input-field-fg);
+    background-color: var(--input-field-bg);
+    border-color: var(--input-field-border);
+
+    transition: all 0.5s;
+}
+
+.database-input-field {
+    background-image: url('./images/magnify-black.png');
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+}
+
+.word-list-input-fields {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    margin-top: 5%;
+}
+
+.main-display {
+    height: 75vh;
+    background-color: var(--secondary-bg);
+    margin: 0% 1%;
+
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    
+}
+

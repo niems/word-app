@@ -1,0 +1,51 @@
+.db-list-group-item {
+    width: 100%;
+    margin: 8px 2px;
+    padding-bottom: 1px;
+    font-style: normal;
+    font-size: 0.85em;
+    text-align: justify;
+
+    border-radius: 5px;
+    border-style: none none none solid;
+    border-width: 2px;
+    border-color: var(--list-item-border);
+    
+    color: var(--list-item-fg);
+    background-color: var(--list-item-bg);
+
+    transition: all 0.4s;
+}
+
+.db-list-group-item-display {
+    width: 100%;
+    height: inherit;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.db-list-item-save {
+    float: right;
+    visibility: hidden;
+    font-size: 1.25em;
+    border-radius: 15px;
+
+    color: var(--accent-two);
+}
+
+.db-list-group-item:hover .db-list-item-save {
+    visibility: visible;
+}
+
+.db-list-group-item:hover {
+    color: var(--list-item-hover-fg);
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 15%;
+}
+
+
+

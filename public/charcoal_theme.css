@@ -1,0 +1,57 @@
+:root {
+    --accent: #ef6817;
+    --accent-two: #5B84B9;
+    --main: #1C1C1C;
+    --second: #5f605d;
+    --third: #383838;
+    --fourth: #828281;
+
+    --draggable-bg: #0B0C10;
+    --draggable-border: var(--draggable-bg);
+
+    --titlebar-bg:var(--main);
+    --titlebar-border: var(--third);
+    
+    /*Titlebar icons*/
+    --icon-fg: var(--accent);
+    --icon-border: var(--main);
+    --icon-hover-bg: var(--accent);
+    --icon-hover-fg: var(--main);
+    --icon-hover-border: var(--third);
+
+    --scrollbar-thumb: var(--second);
+    --scrollbar-track: var(--third);
+
+    /**Loading screen */
+    --progressbar-loading-text: white;
+    --progressbar-bg: var(--third);
+    --progressbar-fg: var(--main);
+    --progressbar-complete: var(--accent);
+    
+    /*main app display*/
+    --main-bg:  var(--main);
+
+    --secondary-bg: var(--main); /*main display - word list/selected word*/
+    
+    --input-field-bg: var(--main);
+    --input-field-fg: var(--second);
+    --input-field-border: var(--accent);
+    --input-field-hover-bg: var(--second);
+    --input-field-hover-fg: var(--main); 
+
+    --selected-word-bg: var(--main);
+    --selected-word-fg: var(--accent);
+    --separator: var(--second);
+    --selected-def-bg: var(--main);
+    --selected-def-fg: var(--accent);
+    --selected-def-border: var(--main);
+    --selected-icon-fg: var(--accent-two);
+
+    --list-pane-bg: var(--third); 
+    --list-item-bg: var(--main);
+    --list-item-fg: var(--fourth);
+    --list-item-border: var(--accent);    
+    --list-item-hover-bg: var(--second);
+    --list-item-hover-fg: var(--accent);
+    --list-item-hover-border: var(--accent);
+}

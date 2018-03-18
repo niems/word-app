@@ -1,0 +1,15 @@
+.word-list-display {
+    height: 95%; /**inherit */
+
+    margin: 1% 0%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-radius: 10px;
+
+    background-color: var(--list-pane-bg);
+}
+
+.list-group {
+    margin: 5% 0%;
+}
+

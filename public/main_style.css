@@ -1,0 +1,44 @@
+:root {
+    --accent: #F3FFFF;
+
+    --draggable-bg: #0B0C10;
+    --draggable-border: var(--draggable-bg);
+
+    --titlebar-bg:#17252A;
+    --titlebar-border: #17252A;
+    
+    /*Titlebar icons*/
+    --icon-fg: #3AAFA9;
+    --icon-border: var(--titlebar-bg);
+    --icon-hover-bg: #3AAFA9;
+    --icon-hover-fg: #17252A;
+    --icon-hover-border: #2B7A78;
+
+    --scrollbar-thumb: #17252A;
+    --scrollbar-track: #2B7A78;
+    
+    /*main app display*/
+    --main-bg:  #3AAFA9; /*red - #C96567; */
+
+    --secondary-bg: var(--main-bg); /*main display - word list/selected word*/
+    
+    --input-field-bg: var(--main-bg);
+    --input-field-fg: #17252A;
+    --input-field-border: #2B7A78;
+    --input-field-hover-bg: #17252A;
+    --input-field-hover-fg: var(--main-bg); 
+
+    --selected-word-bg: var(--main-bg);
+    --selected-word-fg: #17252A;
+    --selected-def-bg: var(--main-bg);
+    --selected-def-fg: #17252A;
+    --selected-def-border: #3AAFA9;
+
+    --list-pane-bg: var(--main-bg); 
+    --list-item-bg: var(--main-bg);
+    --list-item-fg: #172517;
+    --list-item-border: #2B7A78;    
+    --list-item-hover-bg: #17252A;
+    --list-item-hover-fg: #3AAFA9;
+    --list-item-hover-border: #2B7A78;
+}

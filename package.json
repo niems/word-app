@@ -1,0 +1,26 @@
+{
+  "name": "word-connect",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "idb": "^2.1.0",
+    "node-fetch": "^2.1.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
+  "devDependencies": {
+    "electron": "1.8.3",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "electron ."
+  },
+  "main": "src/main.js",
+  "electron-dev": "set ELECTRON_START_URL=http://localhost:3000 && electron ."
+}
