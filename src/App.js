@@ -267,7 +267,7 @@ class App extends Component {
         let data = await this.db.getAllData();
         console.log(`Total words: ${data.length}`);
 
-        this.db.deleteDB();
+        //this.db.deleteDB();
         
         console.log('Await test--------------------------');
       }
